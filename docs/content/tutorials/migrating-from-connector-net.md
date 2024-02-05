@@ -202,7 +202,9 @@ for various precondition checks that indicate misuse of the API (and not a probl
 
 ## Fixed Bugs
 
-The following bugs in Connector/NET are fixed by switching to MySqlConnector. (~~Strikethrough~~ indicates bugs that have since been fixed in a newer version of Connector/NET, but were fixed first in MySqlConnector.)
+The following bugs in Connector/NET are fixed by switching to MySqlConnector.
+
+Open Bugs:
 
 * [#14115](https://bugs.mysql.com/bug.php?id=14115): Compound statements are not supported by `MySqlCommand.Prepare` (Will never be supported)
 * [#37283](https://bugs.mysql.com/bug.php?id=37283), [#70587](https://bugs.mysql.com/bug.php?id=70587): Distributed transactions are not supported
@@ -249,10 +251,11 @@ The following bugs in Connector/NET are fixed by switching to MySqlConnector. (~
 * [#111797](https://bugs.mysql.com/bug.php?id=111797): Certain sequence of special characters can break connection string validation.
 * [#112088](https://bugs.mysql.com/bug.php?id=112088): `BIT(n)` parameter size incorrectly returns 0
 
+Fixed first by MySqlConnector:
 * ~~[#66476](https://bugs.mysql.com/bug.php?id=66476), [#106368](https://bugs.mysql.com/bug.php?id=106368): Connection pool uses queue instead of stack (fixed in v8.0.30)~~
 * ~~[#70111](https://bugs.mysql.com/bug.php?id=70111): `Async` methods execute synchronously (fixed in v8.0.33)~~
 * ~~[#70686](https://bugs.mysql.com/bug.php?id=70686): `TIME(3)` and `TIME(6)` fields serialize milliseconds incorrectly~~
-~~* [#73610](https://bugs.mysql.com/bug.php?id=73610): Invalid password exception has wrong number (fixed in v8.0.32)~~
+* ~~[#73610](https://bugs.mysql.com/bug.php?id=73610): Invalid password exception has wrong number (fixed in v8.0.32)~~
 * ~~[#74392](https://bugs.mysql.com/bug.php?id=74392): Can't use `Stream` to bulk load data~~
 * ~~[#75604](https://bugs.mysql.com/bug.php?id=75604): Crash after 29.4 days of uptime~~
 * ~~[#78426](https://bugs.mysql.com/bug.php?id=78426): Unknown database exception has wrong number~~
